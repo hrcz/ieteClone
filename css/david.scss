@@ -1,0 +1,198 @@
+#mainArea {
+	position: sticky;
+	margin: 0;
+	// background: radial-gradient(ellipse farthest-corner at center top, #000000 0%, #414141 100%);
+	background-image: url(../images/detective/andrew-kambel--x92Ig1Lsf4-unsplash.jpeg);
+	// background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.player-info {
+	position: relative;
+	// margin: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	// margin-right: 30%;
+	width: 500px;
+	// height: 400px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(10px);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	margin: auto;
+	margin-top: 10px;
+
+	h5 {
+		position: relative;
+		line-height: 60px;
+		font-size: 36px;
+		// font-weight: bold;
+		// font-family: "Open Sans", sans-serif;
+		// text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+		background: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(10px);
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		border-left: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+		margin-top: 0px;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+
+	&:hover {
+		transform: skewX(-1deg);
+		transition: transform 0.5s ease;
+	}
+}
+
+.form {
+	// text-align: center;
+
+	.field {
+		// position: relative;
+		margin: 0 50px;
+		// width: 180px;
+	}
+
+	&::-webkit-input-placeholder {
+		color: #ffffff;
+		font-family: 'Open Sans';
+	}
+
+	input[type='text'],
+	input[type='password'] {
+		font-family: 'Open Sans', Calibri, Arial, sans-serif;
+		font-size: 14px;
+		font-weight: 100;
+		padding: 15px 0px 15px 0px;
+		position: inherit;
+		width: 200px;
+		height: 24px;
+		text-align: center;
+
+		border: none;
+		background: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(10px);
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		border-left: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+		color: rgb(255, 255, 255);
+		transition: color 0.3s ease-out;
+		margin-bottom: 15px;
+	}
+	.sub-btn {
+		margin-top: 15px;
+		width: 100px;
+		text-align: center;
+		font-size: 14px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: bold;
+		padding: 12px 0;
+
+		color: #fff;
+		background: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(10px);
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		border-left: 1px solid rgba(255, 255, 255, 0.2);
+		box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+
+		text-transform: uppercase;
+		border: none;
+
+		margin-bottom: 20px;
+
+		&:hover {
+			// background-color: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+			background-color: rgb(51, 55, 67);
+			// transform: skewX(-10deg);
+			// transition: transform 0.5s ease;
+		}
+	}
+}
+
+.pdfs {
+	margin: auto;
+}
+
+.pdflinks {
+	margin-bottom: 100px;
+	&:hover {
+		transform: scale(1.5);
+		transition: transform 0.5s ease;
+		cursor: pointer;
+	}
+}
+
+.leaderboard {
+	h1 {
+		color: #fff;
+	}
+}
+
+.card {
+	border-radius: 20px;
+	// box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+	background-color: rgba(255, 255, 255, 0.05);
+	background: rgba(255, 255, 255, 0.25);
+	// box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	// border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	&:hover {
+		transform: scale(1.05);
+		transition: transform 0.5s;
+	}
+}
+
+.card-img,
+.card-img-top {
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+
+.lin-card {
+	margin-left: 50%;
+}
+
+// MEDIA QUERIES
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+	.player-info {
+		width: 300px;
+	}
+	.form {
+		input[type='text'],
+		input[type='password'] {
+			width: 100px;
+		}
+	}
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.player-info {
+		width: 300px;
+	}
+	.form {
+		input[type='text'],
+		input[type='password'] {
+			width: 100px;
+		}
+	}
+}
+
+// .thumbnail {
+// 	position: inherit;
+// }
+
+.pdfs {
+	margin: auto;
+}
