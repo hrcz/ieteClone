@@ -25,10 +25,19 @@
 
         <!-- JS Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-        <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+        <!-- <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script> -->
+
+        
         
     </head>
     <body>
+
+      <!-- FORM SUBMISSION -->
+      <script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='#';}"></iframe>
+
+
+
         <header id="header">
             <div class="container">
         
@@ -57,10 +66,11 @@
          
 
         <main id="mainArea">
-          <h1 class="display-3 dav-heading" style="position: absolute; color: black; z-index: 2; transform: translateY(400px) translatex(20px);">Detective <br> David</h1>
+          <!-- <h1 class="display-3 dav-heading" style="position: absolute; color: black; z-index: 2; transform: translateY(400px) translatex(20px);">Detective <br> David</h1> -->
           <!-- POSTER -->
-         <section>
-          <img class="thumbnail img-fluid" src="images/detective/Clue 1.svg" alt="image">
+         <section class="thumbnail">
+          <!-- <img class="thumbnail img-fluid" src="images/detective/Clue 1.svg" alt="image"> -->
+          
          </section>
           
         </section>
@@ -68,12 +78,31 @@
           <section class="pdfs container mt-5" id="">
             <div class="row d-flex justify-content-between pdfs">
 
-              <a href="http://google.com" style="color: white;" class="col pdflinks mt-2 wow animate__fadeInLeft"><i class="far fa-file-pdf fa-7x"></i></a>
-              <a href="http://google.com" style="color: white;" class="col pdflinks mt-2 wow animate__fadeInLeft"><i class="far fa-file-pdf fa-7x"></i></a>
-              <a href="http://google.com" style="color: white;" class="col pdflinks mt-2 wow animate__fadeInDown"><i class="far fa-file-pdf fa-7x"></i></a>
-              <a href="http://google.com" style="color: white;" class="col pdflinks mt-2 wow  animate__fadeInDown"><i class="far fa-file-pdf fa-7x"></i></a>
-              <a href="http://google.com" style="color: white;" class="col pdflinks mt-2 wow animate__fadeInRight"><i class="far fa-file-pdf fa-7x"></i></a>
-              <a href="http://google.com" style="color: white;" class="col pdflinks mt-2 wow animate__fadeInRight"><i class="far fa-file-pdf fa-7x"></i></a>
+              <div style="text-align: center;" class="col mt-2 pdflinks wow animate__fadeInLeft">
+                <a href="http://google.com" style="color: white;" class=""><i class="far fa-file-pdf fa-7x"></i></a>
+                <p style="color:cornsilk; font-size: 20px;" class="mt-2">Instructions</p>
+              </div>
+              <div style="text-align: center;" class="col mt-2 pdflinks wow animate__fadeInLeft">
+                <a href="http://google.com" style="color: white;" class=""><i class="far fa-file-pdf fa-7x"></i></a>
+                <p style="color:cornsilk; font-size: 20px;" class="mt-2">Stage-1</p>
+              </div>
+              <div style="text-align: center;" class="col mt-2 pdflinks wow animate__fadeInDown">
+                <a href="http://google.com" style="color: white;" class=""><i class="far fa-file-pdf fa-7x"></i></a>
+                <p style="color:cornsilk; font-size: 20px;" class="mt-2">Stage-2</p>
+              </div>
+              <div style="text-align: center;" class="col mt-2 pdflinks wow animate__fadeInDown">
+                <a href="http://google.com" style="color: white;" class=""><i class="far fa-file-pdf fa-7x"></i></a>
+                <p style="color:cornsilk; font-size: 20px;" class="mt-2">Stage-3</p>
+              </div>
+              <div style="text-align: center;" class="col mt-2 pdflinks wow animate__fadeInRight">
+                <a href="http://google.com" style="color: white;" class=""><i class="far fa-file-pdf fa-7x"></i></a>
+                <p style="color:cornsilk; font-size: 20px;" class="mt-2">Stage-4</p>
+              </div>
+              <div style="text-align: center;" class="col mt-2 pdflinks wow animate__fadeInRight">
+                <a href="http://google.com" style="color: white;" class=""><i class="far fa-file-pdf fa-7x"></i></a>
+                <p style="color:cornsilk; font-size: 20px;" class="mt-2">Stage-5</p>
+              </div>
+              
             </div>
             
           </section>
@@ -84,28 +113,28 @@
           
               <div class="player-info wow animate__fadeIn">
               <h5 class="display-5">Form</h5>
-              <form action="" class="form">
+              <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfNjjllEKpKf489S4CbSsG9jLninqufWt3jfI6O0U2G3YP1rQ/formResponse" method="post" target="hidden_iframe" onsubmit="alert('Form Submitted Succesfully');submitted=true; reset();">
                 <div class="form-field-all">
                   <p class="field">
-                    <input type="text" name="name" placeholder="Name" required/>
+                    <input type="text" name="entry.423789375" placeholder="Name" required/>
                     <i class="far fa-user"></i>
                   </p>
             
                   <p class="field">
-                    <input type="text" name="location" placeholder="Location" required/>
+                    <input type="text" name="entry.1510965166" placeholder="Location" required/>
                     <i class="fas fa-location-arrow"></i>
                   </p>
                   <p class="field">
-                    <input type="text" name="social" placeholder="Social media" required/>
+                    <input type="email" name="entry.730057505" placeholder="Social media" required/>
                     <i class="fas fa-hashtag"></i>
                   </p>
                   <p class="field">
-                    <input type="text" name="answer" placeholder="Final Answer" required/>
+                    <input type="text" name="entry.1725922356" placeholder="Final Answer" required/>
                     <i class="far fa-file-alt"></i>
                   </p>
                 </div>
                 
-                <button type="submit" class="btn btn-primary sub-btn">Submit</button>
+                <button type="submit" class="btn btn-primary sub-btn"">Submit</button>
               </form>
 
               </div>

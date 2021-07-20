@@ -6,10 +6,8 @@
 	// background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 
 	background-image: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
-
-	// background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 50s ease;
+	animation: gradient 15s ease infinite;
 
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
@@ -93,7 +91,8 @@
 	}
 
 	input[type='text'],
-	input[type='password'] {
+	input[type='password'],
+	input[type='email'] {
 		font-family: 'Open Sans', Calibri, Arial, sans-serif;
 		font-size: 14px;
 		font-weight: 100;
@@ -144,6 +143,7 @@
 }
 
 .pdfs {
+	position: relative;
 	margin: auto;
 }
 
@@ -196,7 +196,8 @@
 	}
 	.form {
 		input[type='text'],
-		input[type='password'] {
+		input[type='password'],
+		input[type='email'] {
 			width: 100px;
 		}
 	}
@@ -215,7 +216,7 @@
 	}
 	.form {
 		input[type='text'],
-		input[type='password'] {
+		input[type='password'] input[type='email'] {
 			width: 100px;
 		}
 	}
@@ -224,10 +225,23 @@
 	}
 }
 
-// .thumbnail {
-// 	position: inherit;
-// }
+.thumbnail {
+	/* The image used */
+	background-image: url('../images/detective/Clue\ 1.svg');
+
+	min-height: 100vh;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .pdfs {
 	margin: auto;
+}
+
+#footer {
+	margin-top: 0;
 }
