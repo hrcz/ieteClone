@@ -26,6 +26,33 @@
         <!-- JS Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
         <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+        <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+    <script>
+      function SubForm (){
+        
+        $.ajax({
+          url:"https://api.apispreadsheets.com/data/15689/",
+          type:"post",
+          data:$("#form").serializeArray(),
+          success: function(){
+            alert("Form Data Submitted :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
+
+      
+    </script>
+
+<!-- var submitted=false;
+function redirect(){
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='index.html';}"></iframe>
+} -->
         
 
         
@@ -33,9 +60,6 @@
     </head>
     <body>
 
-      <!-- FORM SUBMISSION -->
-      <script type="text/javascript">var submitted=false;</script>
-<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='#';}"></iframe> -->
 
 
 
@@ -111,32 +135,33 @@
 
           <!-- Form -->
           
+          
 
           
               <div class="player-info wow animate__fadeIn" data-tilt data-tilt-glare="true" data-tilt-perspective="1200">
               <h5 class="display-5">Form</h5>
-              <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfNjjllEKpKf489S4CbSsG9jLninqufWt3jfI6O0U2G3YP1rQ/formResponse" method="post" target="hidden_iframe" onsubmit="alert('Form Submitted Succesfully');submitted=true; reset();">
+              <form class="form" action="index.html" name="myform" method="post" id="form" onsubmit="SubForm(); alert('Form Submitted Succesfully'); reset(); ">
                 <div class="form-field-all">
                   <p class="field">
-                    <input type="text" name="entry.423789375" placeholder="Name" required/>
+                    <input type="text" name="name" placeholder="Name" required/>
                     <i class="far fa-user"></i>
                   </p>
             
                   <p class="field">
-                    <input type="text" name="entry.1510965166" placeholder="Location" required/>
+                    <input type="text" name="location" placeholder="Location" required/>
                     <i class="fas fa-location-arrow"></i>
                   </p>
                   <p class="field">
-                    <input type="email" name="entry.730057505" placeholder="Social media" required/>
+                    <input type="email" name="social" placeholder="Social media" required/>
                     <i class="fas fa-hashtag"></i>
                   </p>
                   <p class="field">
-                    <input type="text" name="entry.1725922356" placeholder="Final Answer" required/>
+                    <input type="text" name="answer" placeholder="Final Answer" required/>
                     <i class="far fa-file-alt"></i>
                   </p>
                 </div>
                 
-                <button type="submit" class="btn btn-primary sub-btn"">Submit</button>
+                <button type="submit" class="btn btn-primary sub-btn" onclick="">Submit</button>
               </form>
 
               </div>
