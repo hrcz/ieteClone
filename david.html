@@ -25,7 +25,8 @@
 
         <!-- JS Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-        <!-- <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script> -->
+        <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+        
 
         
         
@@ -34,7 +35,7 @@
 
       <!-- FORM SUBMISSION -->
       <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='#';}"></iframe>
+<!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='#';}"></iframe> -->
 
 
 
@@ -68,8 +69,9 @@
         <main id="mainArea" class="wow">
           <!-- <h1 class="display-3 dav-heading" style="position: absolute; color: black; z-index: 2; transform: translateY(400px) translatex(20px);">Detective <br> David</h1> -->
           <!-- POSTER -->
-         <section class="thumbnail">
+         <section class="thumbnail" style="text-align: center;">
           <!-- <img class="thumbnail img-fluid" src="images/detective/Clue 1.svg" alt="image"> -->
+          <h1 class="display-1" style="padding-top: 50vh;" data-tilt data-tilt-perspective="2000">Detective David</h1>
           
          </section>
           
@@ -111,7 +113,7 @@
           
 
           
-              <div class="player-info wow animate__fadeIn">
+              <div class="player-info wow animate__fadeIn" data-tilt data-tilt-glare="true" data-tilt-perspective="1200">
               <h5 class="display-5">Form</h5>
               <form class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfNjjllEKpKf489S4CbSsG9jLninqufWt3jfI6O0U2G3YP1rQ/formResponse" method="post" target="hidden_iframe" onsubmit="alert('Form Submitted Succesfully');submitted=true; reset();">
                 <div class="form-field-all">
@@ -279,5 +281,10 @@
               </script>
         
         <script src="js/main.js" ></script>
+
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     </body>
 </html>

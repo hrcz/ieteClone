@@ -230,7 +230,7 @@
 	}
 
 	#mainArea {
-		background-image: url(../images/detective/bg.png);
+		// background-image: url(../images/detective/bg.png);
 	}
 }
 /* iPads (portrait and landscape) ----------- */
@@ -284,9 +284,11 @@
 
 .thumbnail {
 	/* The image used */
-	background-image: url('../images/detective/Clue\ 1.svg');
+	// background-image: url('../images/detective/Clue\ 1.svg');
+	background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
 
 	min-height: 100vh;
+	background-blend-mode: color;
 
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
