@@ -5,25 +5,49 @@
 	// background-image: url(../images/detective/andrew-kambel--x92Ig1Lsf4-unsplash.jpeg);
 	// background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
 
-	background-image: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	// background-image: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
+
+	background: linear-gradient(297deg, #4b6cb7, #182848, #33c6a1);
+	background-size: 600% 600%;
+
+	-webkit-animation: AnimationName 40s ease infinite;
+	-moz-animation: AnimationName 40s ease infinite;
+	animation: AnimationName 40s ease infinite;
 
 	color: #fff;
-	font-family: 'Open Sans', sans-serif;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
-@keyframes gradient {
+@-webkit-keyframes AnimationName {
 	0% {
-		background-position: 0% 50%;
+		background-position: 0% 24%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 100% 77%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 0% 24%;
+	}
+}
+@-moz-keyframes AnimationName {
+	0% {
+		background-position: 0% 24%;
+	}
+	50% {
+		background-position: 100% 77%;
+	}
+	100% {
+		background-position: 0% 24%;
+	}
+}
+@keyframes AnimationName {
+	0% {
+		background-position: 0% 24%;
+	}
+	50% {
+		background-position: 100% 77%;
+	}
+	100% {
+		background-position: 0% 24%;
 	}
 }
 
@@ -223,6 +247,39 @@
 	.dav-heading {
 		display: none;
 	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 1024px) {
+	// #mainArea {
+	// 	position: sticky;
+	// 	margin: 0;
+	// 	// background: radial-gradient(ellipse farthest-corner at center top, #000000 0%, #414141 100%);
+	// 	// background-image: url(../images/detective/andrew-kambel--x92Ig1Lsf4-unsplash.jpeg);
+	// 	// background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+
+	// 	background-image: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
+
+	// 	background-size: 400% 400%;
+	// 	animation: gradient 15s ease infinite;
+
+	// 	color: #fff;
+	// 	font-family: 'Open Sans', sans-serif;
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// }
+
+	// @keyframes gradient {
+	// 	0% {
+	// 		background-position: 0% 50%;
+	// 	}
+	// 	50% {
+	// 		background-position: 100% 50%;
+	// 	}
+	// 	100% {
+	// 		background-position: 0% 50%;
+	// 	}
+	// }
 }
 
 .thumbnail {
