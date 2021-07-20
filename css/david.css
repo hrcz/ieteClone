@@ -1,169 +1,192 @@
 #mainArea {
-	position: sticky;
-	margin: 0;
-	background-image: url(../images/detective/andrew-kambel--x92Ig1Lsf4-unsplash.jpeg);
-	color: #fff;
-	font-family: 'Open Sans', sans-serif;
-	background-repeat: no-repeat;
-	background-size: cover;
+  position: sticky;
+  margin: 0;
+  background-image: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
+  background-size: 400% 400%;
+  animation: gradient 50s ease;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .player-info {
-	position: relative;
-	margin-top: 100px;
-	margin-bottom: 100px;
-	width: 500px;
-	text-align: center;
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(10px);
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
-	border-left: 1px solid rgba(255, 255, 255, 0.2);
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-	border-radius: 3px;
-	margin: auto;
-	margin-top: 10px;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 500px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 10px;
 }
 .player-info h5 {
-	position: relative;
-	line-height: 60px;
-	font-size: 36px;
-	color: #fff;
-	text-align: center;
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(10px);
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
-	border-left: 1px solid rgba(255, 255, 255, 0.2);
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-	margin-top: 0px;
-	border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
+  position: relative;
+  line-height: 60px;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  margin-top: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .player-info:hover {
-	transform: skewX(-1deg);
-	transition: transform 0.5s ease;
+  transform: skewX(-1deg);
+  transition: transform 0.5s ease;
 }
 
 .form .field {
-	margin: 0 50px;
+  margin: 0 50px;
 }
 .form::-webkit-input-placeholder {
-	color: #ffffff;
-	font-family: 'Open Sans';
+  color: #ffffff;
+  font-family: "Open Sans";
 }
-.form input[type='text'],
-.form input[type='password'] {
-	font-family: 'Open Sans', Calibri, Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 100;
-	padding: 15px 0px 15px 0px;
-	position: inherit;
-	width: 200px;
-	height: 24px;
-	text-align: center;
-	border: none;
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(10px);
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
-	border-left: 1px solid rgba(255, 255, 255, 0.2);
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-	color: white;
-	transition: color 0.3s ease-out;
-	margin-bottom: 15px;
+.form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+.form input[type=text],
+.form input[type=password] {
+  font-family: "Open Sans", Calibri, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 15px 0px 15px 0px;
+  position: inherit;
+  width: 200px;
+  height: 24px;
+  text-align: center;
+  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: color 0.3s ease-out;
+  margin-bottom: 15px;
 }
 .form .sub-btn {
-	margin-top: 15px;
-	width: 100px;
-	text-align: center;
-	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	padding: 12px 0;
-	color: #fff;
-	background: rgba(255, 255, 255, 0.05);
-	backdrop-filter: blur(10px);
-	border-top: 1px solid rgba(255, 255, 255, 0.2);
-	border-left: 1px solid rgba(255, 255, 255, 0.2);
-	box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-	text-transform: uppercase;
-	border: none;
-	margin-bottom: 20px;
+  margin-top: 15px;
+  width: 100px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding: 12px 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 20px;
 }
 .form .sub-btn:hover {
-	background-color: #333743;
+  background-color: #333743;
 }
 
 .pdfs {
-	margin: auto;
+  margin: auto;
 }
 
 .pdflinks {
-	margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 .pdflinks:hover {
-	transform: scale(1.5);
-	transition: transform 0.5s ease;
-	cursor: pointer;
+  transform: scale(1.5);
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 
 .leaderboard h1 {
-	color: #fff;
+  color: #fff;
 }
 
 .card {
-	border-radius: 20px;
-	background-color: rgba(255, 255, 255, 0.05);
-	background: rgba(255, 255, 255, 0.25);
-	backdrop-filter: blur(4px);
-	-webkit-backdrop-filter: blur(4px);
-	border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .card:hover {
-	transform: scale(1.05);
-	transition: transform 0.5s;
+  transform: scale(1.05);
+  transition: transform 0.5s;
 }
 
 .card-img,
 .card-img-top {
-	border-radius: 20px;
-	margin-bottom: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .lin-card {
-	margin-left: 50%;
+  margin-left: 50%;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	.player-info {
-		width: 300px;
-	}
+  .player-info {
+    width: 300px;
+  }
 
-	.form input[type='text'],
-	.form input[type='password'] {
-		width: 100px;
-	}
+  .form input[type=text],
+.form input[type=password] {
+    width: 100px;
+  }
 
-	.dav-heading {
-		display: none;
-	}
+  .dav-heading {
+    display: none;
+  }
+
+  #mainArea {
+    background-image: url(../images/detective/bg.png);
+  }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-	.player-info {
-		width: 300px;
-	}
+  .player-info {
+    width: 300px;
+  }
 
-	.form input[type='text'],
-	.form input[type='password'] {
-		width: 100px;
-	}
+  .form input[type=text],
+.form input[type=password] {
+    width: 100px;
+  }
 
-	.dav-heading {
-		display: none;
-	}
+  .dav-heading {
+    display: none;
+  }
 }
 .pdfs {
-	margin: auto;
+  margin: auto;
 }
 
 /*# sourceMappingURL=david.css.map */
